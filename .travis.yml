@@ -8,6 +8,9 @@ install:
   
 addons:
   code_climate:
-    repo_token: 579d0882d77f8e3f2100260d
+    repo_token: 6acdeb1858c6e1fe8581daea18a61bc8d2bf52657cba041e38885353d5783c78
 
 script: make lint test
+
+after_script:
+  - vendor/bin/test-reporter
