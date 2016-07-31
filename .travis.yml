@@ -1,10 +1,13 @@
 language: php
 php:
   - '7.0'
+
+install:
+  - composer self-update
+  - make install
   
 addons:
   code_climate:
     repo_token: 579d0882d77f8e3f2100260d
 
-after_script:
-  - vendor/bin/test-reporter
+script: make lint test
