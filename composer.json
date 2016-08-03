@@ -1,6 +1,6 @@
 {
   "name": "maoeye18/hexlet-psr-linter",
-  "bin": ["bin/psr-linter-maoeye18"],
+  "bin": ["bin/psrlint"],
   "type": "library",
 
   "require-dev": {

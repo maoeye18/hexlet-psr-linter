@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$example = new PSRLinter\Example();
+
+echo $example->getNum();
+$example->setNum(3);
+echo $example->getNum();
